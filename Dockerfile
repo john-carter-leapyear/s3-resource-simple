@@ -1,13 +1,8 @@
-FROM alpine:latest
-#FROM alpine:latest
-# Waiting on alpine:edge (3.11.X) to become latest to solve Openssl CVEs needing 1.1.1d-r1 or higher
+FROM ubuntu:18.04
 
-RUN apk update && apk upgrade
-# sqlite is not used, and has vulns
-RUN apk del sqlite
-RUN apk add python3
-RUN apk add py3-pip
-
+RUN apt update && apt upgrade
+RUN apt install python3
+RUN apt install python3-pip
 
 # get the latest straight from the source - upstream version has known vulns
 RUN wget https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 \
