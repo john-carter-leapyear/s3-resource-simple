@@ -1,8 +1,8 @@
 FROM ubuntu:18.04
 
 RUN apt update && apt upgrade
-RUN apt install python3
-RUN apt install python3-pip
+RUN apt install python3 -y
+RUN apt install python3-pip -y
 
 # get the latest straight from the source - upstream version has known vulns
 RUN wget https://github.com/stedolan/jq/releases/download/jq-1.6/jq-linux64 \
