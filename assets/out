@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Resource Impl: http://concourse.ci/implementing-resources.html#out:-update-a-resource.
 set -ex

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Resource Impl: http://concourse.ci/implementing-resources.html#in:-fetch-a-given-resource
 set -e
